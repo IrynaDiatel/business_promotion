@@ -38,8 +38,6 @@ button {
   margin: 0 auto;
 }
 /* Header */
-.header {
-}
 
 .header .container {
   display: flex;
@@ -444,6 +442,9 @@ button {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-bottom: 25px;
 }
 .quick-subtitle {
@@ -549,13 +550,20 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 300px;
-  height: 85px;
-  position: relative;
-  top: 23px;
+  width: 280px;
+  height: 60px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  background: #ffffff;
+  border-radius: 35px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.05);
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
 }
 .quick-btn {
   display: block;
@@ -901,8 +909,6 @@ button {
   align-items: center;
   gap: 40px;
 }
-.logos {
-}
 .logos-img {
   height: 50px;
   transition: transform 0.3s ease;
@@ -919,13 +925,13 @@ button {
 }
 
 .footer-container {
-  display: flex;
-  margin-bottom: 10px;
+   display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 40px;
+  gap: 60px;
 }
 
-.footer-logo-wrap {
-  margin-right: 146px;
-}
 
 .logo-footer {
   margin-bottom: 18px;
@@ -941,19 +947,20 @@ button {
   height: 40px;
 }
 
+.footer-soc-icon {
+  fill: #02897a;
+}
+
 .footer-soc-link {
   width: 100%;
   height: 100%;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #edfffc;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.footer-resource-wrap {
-  margin-right: 129px;
-}
 
 .footer-text {
   font-weight: 500;
@@ -961,6 +968,7 @@ button {
   line-height: 1.5;
   margin-bottom: 8px;
   display: block;
+  
 }
 
 .footer-list {
@@ -973,16 +981,24 @@ button {
   color: #22343d;
 }
 
+.footer-resource-wrap {
+  margin-left: 80px;
+}
+
 .footer-stuff-wrap {
+  margin-left: 80px;
 }
 
 .footer-form-wrap {
-  margin-left: auto;
+  margin-left: 60px;
   max-width: 325px;
 }
 .footer-form-text {
   margin-bottom: 30px;
+  font-weight: 400;
+  line-height: 1.6;
 }
+
 .footer-form {
   display: flex;
   flex-direction: column;
@@ -1008,8 +1024,11 @@ button {
   color: #02897a;
 }
 .footer-form-icon {
-  margin: 11px 10px;
   position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 15px;
+  fill: #02897a;
 }
 
 .footer-form-btn {
@@ -1161,8 +1180,6 @@ button {
   fill: transparent;
 }
 
-.icon-check {
-}
 
 .check-link {
   line-height: 1.33333;
